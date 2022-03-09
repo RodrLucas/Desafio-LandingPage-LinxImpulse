@@ -1,0 +1,42 @@
+.share__container {
+    width: calc(100vw - 2rem);
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-top: 5rem;
+    border-top: 1px solid #888888;
+    padding-top: 1rem;
+}
+
+.share__fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+}
+
+.share__tittle {
+    color: #888888;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.share__paragraph {
+    color: #888888;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .share__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .share__fieldset {
+        max-width: 30rem;
+        width: 20rem;
+    }
+}

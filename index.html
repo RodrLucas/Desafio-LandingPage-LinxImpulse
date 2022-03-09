@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/algoritimo.css">
+    <link rel="stylesheet" href="./CSS/form.css">
+    <link rel="stylesheet" href="./CSS/product.css">
+    <link rel="stylesheet" href="./CSS/moreProducts.css">
+    <link rel="stylesheet" href="./CSS/share.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <title>Desafio | Frontend Developer</title>
+</head>
+
+<body>
+    <header class="header__container--clip">
+        <div class="header__container">
+            <h1 class="header__titlle">
+                uma seleção de produtos <br> <strong>especial para você</strong>
+            </h1>
+            <p class="header__paragraph">Todos os produtos desta lista foram selecionados a partir da sua navegação.
+                Aproveite!</p>
+            <div class="header__container--link">
+                <button class="header__btn">
+                    <a class="header__link" href="#">Conheça a Linx</a>
+                </button>
+                <button class="header__btn">
+                    <a class="header__link" href="#">Ajude o algorítimo</a>
+                </button>
+                <button class="header__btn">
+                    <a class="header__link" href="#">Seus produtos</a>
+                </button>
+                <button class="header__btn">
+                    <a class="header__link" href="#">Compartilhe</a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="algoritimo__container-all">
+            <section class="algoritimo__container">
+                <div class="algoritimo__container--tittle">
+                    <h2 class="algoritimo__tittle">Ajude o algorítimo a ser mais certeiro</h2>
+                    <div class="btn" id="btn"></div>
+                </div>
+                <p class="algoritimo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore a beatae iste expedita! Deserunt quidem quae ullam aspernatur laborum reprehenderit sint expedita itaque, sed officiis ipsum, beatae ducimus delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellendus laudantium similique veniam illum molestiae, magni dolorum modi aperiam, placeat consequuntur quibusdam magnam excepturi accusamus quas iusto labore deserunt sed.</p>
+            </section>
+            <form method="get" class="form">
+                <fieldset class="form__fieldset">
+                    <label class="form__label" for="name">Seu nome:</label>
+                    <input class="form__input" name="name" id="name" type="text">
+                    <label class="form__label" for="email">E-mail:</label>
+                    <input class="form__input" name="email" id="email" type="email">
+                    <label class="form__label" for="cpf">CPF:</label>
+                    <input class="form__input" name="cpf" id="cpf" type="number">
+                    <div class="container__form--radio">
+                        <div class="form__inputRadio">
+                            <input class="form__radio" name="sex" id="male" type="radio">
+                            <label class="form__label--sex" for="male">Masculino</label>
+                        </div>
+                        <div class="form__inputRadio">
+                            <input class="form__radio" name="sex" id="female" type="radio">
+                            <label class="form__label--sex" for="female">Feminino</label>
+                        </div>
+                  </div>
+                  <button class="form__btn" type="submit">Enviar</button>
+                </fieldset>
+        </div>
+        </form>
+
+        <section class="special__section">
+            <h2 class="special__tittle">Sua seleção especial</h2>
+            <div id="product__section"></div>
+        </section>
+
+        <section class="moreProducts__container">
+            <div id="moreProductsBtn" class="moreProducts__container--btn">
+                <p class="moreProducts__btn" href="#">Ainda mais produtos aqui!</p>
+            </div>
+
+            <section display="none" id="moreProducts"></section>
+        </section>
+
+        <section class="share__container">
+            <h2 class="share__tittle">Compartilhe a novidade</h2>
+            <div class="share__itens">
+                <p class="share__paragraph">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+
+                <form class="share__form" action="get">
+                    <fieldset class="share__fieldset">
+                        <label class="form__label" for="name">Nome do seu amigo:</label>
+                        <input class="form__input" name="name" id="name" type="text">
+        
+                        <label class="form__label" for="email">E-mail dele:</label>
+                        <input class="form__input" name="email" id="email" type="email">        
+
+                        <button class="form__btn" type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p class="footer__paragraph">Testando suas habilidades em HTML, CSS e JS. <br> Linx Impulse <br> 2019</p>
+        </div>
+    </footer>
+</body>
+
+<script src="./JS/hideShowText.js"></script>
+<script src="./JS/main.js"></script>
+<script src="./JS/moreProducts.js"></script>
+</html>

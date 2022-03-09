@@ -1,0 +1,114 @@
+.moreProducts__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.moreProducts__container--btn {
+    border: 1px solid #888888;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: calc(100vw - 7rem);
+}
+
+.moreProducts__btn {
+    text-decoration: none;
+    color: #888888;
+}
+
+#moreProducts {
+    margin-top: 2rem;
+    width: calc(100vw - 1rem);
+    display: none;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.moreProduct__card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-left: .5rem;
+    flex-grow: 1;
+}
+
+.moreProduct__card--imgContainer {
+    border: 1px solid #707070;
+    border-radius: 3px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.moreProduct__card--itensContainer {
+    flex-grow: 1;
+}
+
+.moreProduct__card--name {
+    color: #888888;
+    font-size: 1rem; 
+}
+
+.moreProduct__card--oldPrice {
+    color: #888888;
+    font-size: .9rem;
+}
+
+.moreProduct__card--price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #888888;
+}
+
+.moreProduct__card--installments {
+    color: #888888;
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.3rem;
+    flex-direction: column;
+}
+
+.moreProduct__card--buyContainer {
+    border: 1px solid #888888;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(100% - 1rem);
+    height: 30px;
+}
+
+.moreProduct__card--buy {
+    border: none;
+    text-decoration: none;
+    color: #888888;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #moreProducts{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 50rem;
+    }
+
+    .moreProduct__card {
+        flex-direction: column;
+    }
+
+    .moreProduct__card--imgContainer {
+        width: 10rem;
+    }
+
+    .moreProducts__container--btn {
+        max-width: 50rem;
+    }
+}

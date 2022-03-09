@@ -1,0 +1,69 @@
+.form {
+    width: calc(100vw - 2rem);
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.form__fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+}
+
+.form__label {
+    color: #888888;
+    font-size: .9rem;
+    margin-bottom: 7px;
+}
+
+.form__input {
+    height: 30px;
+    margin-bottom: 2rem;
+    border: 1px solid #707070;
+}
+
+.container__form--radio{
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.form__inputRadio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form__label--sex {
+    color: #888888;
+    font-size: .9rem;
+}
+
+.form__btn {
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: #888888;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .form__fieldset {
+        max-width: 30rem;
+    }
+
+    .form {
+        width: 30rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+
+    .form__label--sex {
+        font-size: 1.1rem;
+    }
+}
